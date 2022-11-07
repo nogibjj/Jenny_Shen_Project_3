@@ -20,7 +20,7 @@ query = """
 query_job = client.query(query)  # Make an API request.
 results = query_job.result()
 output = results.to_dataframe()
-# print(output)
+print(output)
 
 # find the top 10 states with the highest health ranking value by valuing people who are able-bodied
 query1 = """
@@ -33,8 +33,7 @@ query1 = """
 query_job1 = client.query(query1)  # Make an API request.
 results1 = query_job1.result()
 output1 = results1.to_dataframe()
-# print(output1)
-
+print(output1)
 
 #find states with the lowest health ranking value in 2019
 query2 = """
